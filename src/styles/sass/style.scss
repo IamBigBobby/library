@@ -1,7 +1,8 @@
 // Abstracts
 @import 'abstracts/variables';
 @import 'abstracts/placeholders';
+@import 'abstracts/mixins';
 
 // Base 
 @import 'base/base';
-@import ''
+@import 'base/normalize';
