@@ -1,9 +1,33 @@
+body {
+  font-family: 'Inter', sans-serif; }
+
+h1, h2 {
+  font-family: 'Forum', cursive; }
+
 html {
   font-size: 10px; }
 
 body {
   font-size: 2rem;
-  box-sizing: border-box; }
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem; }
+
+h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 5rem;
+  letter-spacing: 0.6px;
+  color: #FFFFFF; }
+
+h2 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
