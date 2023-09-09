@@ -4,6 +4,11 @@ body {
 h1, h2 {
   font-family: 'Forum', cursive; }
 
+.header__wrapper, .header__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 html {
   font-size: 10px; }
 
@@ -12,6 +17,9 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 2rem; }
+
+* {
+  box-sizing: border-box; }
 
 h1 {
   font-size: 3rem;
@@ -61,7 +69,6 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
   margin: 0; }
 
 /* Grouping content
@@ -333,5 +340,31 @@ template {
  */
 [hidden] {
   display: none; }
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px 40px; }
+
+.header {
+  background-color: #0C0C0E; }
+
+.header__wrapper {
+  padding: 20px 20px; }
+
+.header__panel {
+  gap: 40px; }
+
+.navigation {
+  display: flex;
+  gap: 30px; }
+
+.navigation__link {
+  list-style-type: none;
+  color: #FFFFFF; }
+
+.navigation__link a {
+  color: #FFFFFF;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

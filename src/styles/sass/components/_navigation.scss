@@ -1,0 +1,13 @@
+.navigation{
+  display: flex;
+  gap: 30px;
+}
+.navigation__link{
+  list-style-type: none;
+  color: $white;
+}
+
+.navigation__link a{
+  color: $white;
+  text-decoration: none;
+}

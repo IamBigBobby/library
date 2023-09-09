@@ -6,3 +6,10 @@
 // Base 
 @import 'base/base';
 @import 'base/normalize';
+
+// Layouts
+@import 'layouts/wrapper';
+@import 'layouts/header';
+
+// Components
+@import 'components/navigation'

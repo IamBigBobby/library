@@ -4,7 +4,11 @@ html{
 
 body{
   @extend %font-inter;
-  @include font($size: 2rem, $height: 2rem)
+  @include font($size: 2rem, $height: 2rem);
+}
+
+*{
+  box-sizing: border-box;
 }
 
 h1{

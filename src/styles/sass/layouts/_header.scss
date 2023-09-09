@@ -1,0 +1,13 @@
+.header{
+  background-color: $darkBlack;
+}
+
+.header__wrapper{
+  @extend %flex-space-between;  
+  padding: 20px 20px;
+}
+
+.header__panel{
+  @extend %flex-space-between;
+  gap: 40px;
+}
