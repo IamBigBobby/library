@@ -1,0 +1,27 @@
+.welcome{
+  background-color: $darkBlack;
+}
+
+.welcome__wrapper{
+  position: relative;
+  background-image: url('/assets/section-welcome/png/Welcome.png');
+  height: 600px;
+}
+
+.welcome__greeting{
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $white;
+
+  position: absolute;
+  height: 220px;
+  width: 600px;
+  background-color: $darkBlack;
+  padding: 35px 40px;
+  @extend %font-forum;
+  @include font($size: 4rem, $height: 5rem);
+  left: 0px;
+  top: 220px;
+}
+
