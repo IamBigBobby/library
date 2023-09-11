@@ -1,4 +1,4 @@
-body {
+body, .text-explanation {
   font-family: 'Inter', sans-serif; }
 
 h1, h2, .welcome__greeting {
@@ -30,12 +30,29 @@ h1 {
   color: #FFFFFF; }
 
 h2 {
+  text-align: center;
+  margin: 0;
   font-size: 4rem;
   font-style: normal;
   font-weight: normal;
   line-height: 4rem;
   letter-spacing: 2px;
   text-transform: capitalize; }
+  h2::after {
+    content: '';
+    margin: auto;
+    display: block;
+    border-bottom: 1px solid #0C0C0E;
+    width: 50px;
+    margin-top: 20px; }
+
+.text-explanation {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -379,6 +396,10 @@ template {
   line-height: 5rem;
   left: 0px;
   top: 220px; }
+
+.block-name__text-explanation-wrapper {
+  margin-top: 40px;
+  margin-bottom: 20px; }
 
 .navigation {
   display: flex;
