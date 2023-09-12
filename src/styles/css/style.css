@@ -9,7 +9,7 @@ h1, h2, .welcome__greeting {
   justify-content: space-between;
   align-items: center; }
 
-.carousel-pagination__item {
+.navigation__link a, .carousel-pagination__item {
   transition: 1s; }
 
 html {
@@ -728,6 +728,8 @@ template {
 .navigation__link a {
   color: #FFFFFF;
   text-decoration: none; }
+  .navigation__link a:hover {
+    color: #BB945F; }
 
 .carousel {
   display: flex;

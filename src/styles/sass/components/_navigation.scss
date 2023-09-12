@@ -10,4 +10,9 @@
 .navigation__link a{
   color: $white;
   text-decoration: none;
+  @extend %transition;
+
+  &:hover{
+    color: $orange;
+  }
 }
