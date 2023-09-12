@@ -9,6 +9,9 @@ h1, h2, .welcome__greeting {
   justify-content: space-between;
   align-items: center; }
 
+.carousel-pagination__item {
+  transition: 1s; }
+
 html {
   font-size: 10px; }
 
@@ -361,7 +364,8 @@ template {
 .wrapper {
   max-width: 1440px;
   margin: auto;
-  padding: 20px 40px; }
+  padding: 20px 20px;
+  overflow: hidden; }
 
 .header {
   background-color: #0C0C0E; }
@@ -412,5 +416,31 @@ template {
 .navigation__link a {
   color: #FFFFFF;
   text-decoration: none; }
+
+.carousel {
+  display: flex;
+  gap: 25px; }
+
+.carousel__item {
+  display: block; }
+
+.carousel-pagination {
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 68px; }
+
+.carousel-pagination__item {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #0C0C0E;
+  cursor: pointer; }
+  .carousel-pagination__item:hover {
+    background-color: #BB945F;
+    transform: scale(1.2); }
+
+.carousel-pagination__item_active {
+  background-color: #BB945F; }
 
 /*# sourceMappingURL=style.css.map */

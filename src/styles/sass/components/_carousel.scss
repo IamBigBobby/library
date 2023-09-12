@@ -1,0 +1,33 @@
+.carousel{
+  display: flex;
+  gap: 25px;
+}
+
+.carousel__item{
+  display: block;
+}
+
+.carousel-pagination{
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 68px;
+}
+
+.carousel-pagination__item{
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: $darkBlack;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover{
+    background-color: $orange;
+    transform: scale(1.2);
+  }
+}
+
+.carousel-pagination__item_active{
+  background-color: $orange;
+}
