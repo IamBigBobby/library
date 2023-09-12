@@ -1,0 +1,52 @@
+.seasons-peaker{
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.seasons-peaker .seasons-peaker__season-lable{
+  @extend %font-inter;
+  @include font($size: 2rem);
+  user-select: none;
+  cursor: pointer;
+  padding-left: 40px;
+  position: relative;
+}
+
+.favorites__season[type="radio"]{
+  display: none;
+}
+
+.seasons-peaker__season-lable::before{
+  content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $darkBlack;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.seasons-peaker__season-lable::after{
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: $darkBlack;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+
+.favorites__season[type="radio"]:checked + .seasons-peaker__season-lable::after{
+  opacity: 1;
+}
+
+

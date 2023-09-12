@@ -1,0 +1,6 @@
+.favorites__title-peacker-seasons{
+  @include font($size: 2rem, $height: normal, $weight: 700);
+  @extend %font-inter;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

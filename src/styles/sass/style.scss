@@ -6,13 +6,16 @@
 // Base 
 @import 'base/base';
 @import 'base/normalize';
+@import 'base/normalize';
 
 // Layouts
 @import 'layouts/wrapper';
 @import 'layouts/header';
 @import 'layouts/welcome';
 @import 'layouts/about';
+@import 'layouts/favorites';
 
 // Components
 @import 'components/navigation';
 @import 'components/carousel';
+@import 'components/season-peaker';
