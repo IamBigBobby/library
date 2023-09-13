@@ -1,7 +1,7 @@
-body, .text-explanation, .favorites__title-peacker-seasons, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button {
+body, .text-explanation, .favorites__title-peacker-seasons, .menu__name, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button {
   font-family: 'Inter', sans-serif; }
 
-h1, h2, .welcome__greeting, .book-showcase__staff-picks {
+h1, h2, .welcome__greeting, .menu__title, .menu__price, .book-showcase__staff-picks {
   font-family: 'Forum', cursive; }
 
 .header__wrapper, .header__panel {
@@ -717,6 +717,60 @@ template {
   margin-top: 40px;
   margin-bottom: 40px; }
 
+.text-explanation_coffe-shop {
+  letter-spacing: 2px;
+  margin: 38px auto; }
+
+.menu {
+  display: flex;
+  justify-content: space-between; }
+
+.menu__coffee-and-tea, .menu__desserts-and-cakes {
+  width: 438px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; }
+
+.menu__desserts-and-cakes > * {
+  text-align: right; }
+
+.menu__title {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: #BB945F; }
+
+.menu__name {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 200px;
+  align-items: center; }
+
+.menu__price {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize; }
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.menu__line {
+  width: 100px;
+  height: 1px;
+  background-color: #BB945F; }
+
 .navigation {
   display: flex;
   gap: 30px; }
@@ -808,7 +862,8 @@ template {
   flex-wrap: wrap;
   row-gap: 40px;
   column-gap: 260px;
-  margin-top: 45px; }
+  margin-top: 45px;
+  margin-bottom: 20px; }
 
 .book-showcase__book-card {
   position: relative;
