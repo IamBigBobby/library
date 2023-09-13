@@ -2,8 +2,6 @@
   display: block;
   border: 1px solid $darkBlack;
   background-color: $white;
-  width: 75px;
-  height: 30px;
   border-radius: 2px;
 
   @extend %font-inter;
@@ -19,4 +17,19 @@
     background-color: $orange;
     border: 1px solid $orange;
   }
+}
+
+.button_buy{
+  width: 75px;
+  height: 30px;
+}
+
+.button_own{
+  width: 75px;
+  height: 30px;
+  background-color: $white;
+  border: 1px solid $orange;
+  color: $orange;
+  cursor: default;
+  pointer-events: none;
 }

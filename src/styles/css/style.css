@@ -870,8 +870,6 @@ template {
   display: block;
   border: 1px solid #0C0C0E;
   background-color: #FFFFFF;
-  width: 75px;
-  height: 30px;
   border-radius: 2px;
   font-size: 1rem;
   font-style: normal;
@@ -883,5 +881,18 @@ template {
   .button:hover {
     background-color: #BB945F;
     border: 1px solid #BB945F; }
+
+.button_buy {
+  width: 75px;
+  height: 30px; }
+
+.button_own {
+  width: 75px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #BB945F;
+  color: #BB945F;
+  cursor: default;
+  pointer-events: none; }
 
 /*# sourceMappingURL=style.css.map */
