@@ -1,7 +1,7 @@
-body, .text-explanation, .favorites__title-peacker-seasons, .seasons-peaker .seasons-peaker__season-lable {
+body, .text-explanation, .favorites__title-peacker-seasons, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button {
   font-family: 'Inter', sans-serif; }
 
-h1, h2, .welcome__greeting {
+h1, h2, .welcome__greeting, .book-showcase__staff-picks {
   font-family: 'Forum', cursive; }
 
 .header__wrapper, .header__panel {
@@ -9,7 +9,7 @@ h1, h2, .welcome__greeting {
   justify-content: space-between;
   align-items: center; }
 
-.navigation__link a, .carousel-pagination__item {
+.navigation__link a, .carousel-pagination__item, .button {
   transition: 1s; }
 
 html {
@@ -802,5 +802,86 @@ template {
 
 .favorites__season[type="radio"]:checked + .seasons-peaker__season-lable::after {
   opacity: 1; }
+
+.book-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 260px;
+  margin-top: 45px; }
+
+.book-showcase__book-card {
+  position: relative;
+  width: 550px;
+  height: 555px;
+  border: 1px solid #0C0C0E;
+  padding: 15px 20px; }
+
+.book-showcase__main-info {
+  padding: 18px 0px 20px; }
+
+.book-showcase__staff-picks {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize; }
+  .book-showcase__staff-picks::after {
+    content: '';
+    display: block;
+    border: 1px solid #BB945F;
+    width: 60px; }
+
+.book-showcase__book-name {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.book-showcase__autor {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize; }
+
+.book-showcase__description {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 355px;
+  height: 320px;
+  margin-bottom: 15px; }
+
+.book-showcase__book-img {
+  position: absolute;
+  bottom: -1px;
+  right: -40px;
+  display: block; }
+
+.button {
+  display: block;
+  border: 1px solid #0C0C0E;
+  background-color: #FFFFFF;
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer; }
+  .button:hover {
+    background-color: #BB945F;
+    border: 1px solid #BB945F; }
 
 /*# sourceMappingURL=style.css.map */
