@@ -1,4 +1,4 @@
-body, .text-explanation, .favorites__title-peacker-seasons, .menu__name, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button {
+body, .text-explanation, .favorites__title-peacker-seasons, .menu__name, .our-contacts__information-container, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button {
   font-family: 'Inter', sans-serif; }
 
 h1, h2, .welcome__greeting, .menu__title, .menu__price, .book-showcase__staff-picks {
@@ -723,7 +723,8 @@ template {
 
 .menu {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 20px; }
 
 .menu__coffee-and-tea, .menu__desserts-and-cakes {
   width: 438px;
@@ -770,6 +771,37 @@ template {
   width: 100px;
   height: 1px;
   background-color: #BB945F; }
+
+.our-contacts__information-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.our-contacts__contact-information {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; }
+
+.our-contacts__contacts-container, .our-contacts__contacts-staff {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+
+.our-contacts__title, .our-contacts__title, .our-contacts__staff span {
+  font-weight: 700; }
+
+.our-contacts__location {
+  display: block;
+  width: 696px;
+  height: 414px; }
 
 .navigation {
   display: flex;

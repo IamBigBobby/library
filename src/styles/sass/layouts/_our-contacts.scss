@@ -1,0 +1,35 @@
+.our-contacts__information-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @extend %font-inter;
+  @include font($size: 2rem, $height: 4rem);
+  letter-spacing: 2px;
+  text-transform: capitalize;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.our-contacts__contact-information{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.our-contacts__contacts-container, .our-contacts__contacts-staff{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-contacts__title, .our-contacts__title, .our-contacts__staff span{
+  font-weight: 700;
+}
+
+.our-contacts__location{
+  display: block;
+  width: 696px;
+  height: 414px;
+}
