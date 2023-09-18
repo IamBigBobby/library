@@ -42,3 +42,11 @@
   @include font($size: 2rem, $height: normal, $weight: 700);
   letter-spacing: 1px;
 }
+
+.button_sign-up, .button_log-in{
+  width: 75px;
+  padding: 8px 0px;
+  @extend %font-inter;
+  @include font($size: 1rem, $height: normal, $weight: 700);
+  letter-spacing: 1px;
+}

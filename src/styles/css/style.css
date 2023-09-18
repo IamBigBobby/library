@@ -1,7 +1,7 @@
-body, .text-explanation, .favorites__title-peacker-seasons, .menu__name, .our-contacts__information-container, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button, .button_library-card, .form-library-card__title {
+body, .text-explanation, .favorites__title-peacker-seasons, .menu__name, .our-contacts__information-container, .digital-library-cards__info, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button, .button_library-card, .button_sign-up, .button_log-in, .form-library-card__title {
   font-family: 'Inter', sans-serif; }
 
-h1, h2, .welcome__greeting, .menu__title, .menu__price, .book-showcase__staff-picks, .form-library-card__library-name, .form-library-card__reader-name::placeholder, .form-library-card__card-number::placeholder {
+h1, h2, .welcome__greeting, .menu__title, .menu__price, .digital-library-cards__info-title, .book-showcase__staff-picks, .form-library-card__library-name, .form-library-card__reader-name::placeholder, .form-library-card__card-number::placeholder {
   font-family: 'Forum', cursive; }
 
 .header__wrapper, .header__panel {
@@ -809,6 +809,32 @@ template {
   margin-top: 40px;
   margin-bottom: 40px; }
 
+.digital-library-cards__get-card {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 35px; }
+
+.digital-library-cards__info-title {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0.6px; }
+
+.digital-library-cards__info {
+  width: 456px;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4rem;
+  letter-spacing: 0.4px; }
+
+.digital-library-cards__buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px; }
+
 .navigation {
   display: flex;
   gap: 30px; }
@@ -993,6 +1019,15 @@ template {
   height: 44px;
   padding: 10px 40px;
   font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px; }
+
+.button_sign-up, .button_log-in {
+  width: 75px;
+  padding: 8px 0px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

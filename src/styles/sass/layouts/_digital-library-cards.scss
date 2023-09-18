@@ -4,3 +4,29 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+.digital-library-cards__get-card{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 35px;
+}
+
+.digital-library-cards__info-title{
+  @extend %font-forum;
+  @include font($size: 3rem, $height: normal);
+  letter-spacing: 0.6px;
+}
+
+.digital-library-cards__info{
+  width: 456px;
+  @extend %font-inter;
+  @include font($size: 2rem, $height: 4rem);
+  letter-spacing: 0.4px;
+}
+
+.digital-library-cards__buttons-container{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px
+}
