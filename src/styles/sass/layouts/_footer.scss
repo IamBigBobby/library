@@ -1,0 +1,61 @@
+.footer{
+  background-color: $darkBlack;
+}
+
+.upper-footer{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $white;
+  padding-bottom: 30px;
+}
+
+.upper-footer__left{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  @extend %font-inter;
+  @include font($size: 1.5rem, $height: 2rem);
+  color: $white;
+}
+
+.upper-footer__right{
+  @extend %font-inter;
+  @include font($size: 1.5rem, $height: 2rem);
+  color: $white;
+  text-align: right;
+}
+
+.upper-footer__schedule{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upper-footer__social-container{
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+  display: flex;
+  gap: 15px;
+}
+
+.lower-footer{
+  display: flex;
+  justify-content: space-between;
+  @extend %font-inter;
+  @include font($size: 2rem, $height: 2rem);
+  color: $white;
+  letter-spacing: 2px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.lower-footer__developer-github-link{
+  text-decoration: none;
+  color: $white;
+  @extend %transition;
+
+  &:hover{
+    color: $orange;
+  }
+}

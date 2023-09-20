@@ -1,4 +1,4 @@
-body, .text-explanation, .favorites__title-peacker-seasons, .menu__name, .our-contacts__information-container, .digital-library-cards__info, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button, .button_library-card, .button_sign-up, .button_log-in, .form-library-card__title {
+body, .text-explanation, .favorites__title-peacker-seasons, .menu__name, .our-contacts__information-container, .digital-library-cards__info, .upper-footer__left, .upper-footer__right, .lower-footer, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button, .button_library-card, .button_sign-up, .button_log-in, .form-library-card__title {
   font-family: 'Inter', sans-serif; }
 
 h1, h2, .welcome__greeting, .menu__title, .menu__price, .digital-library-cards__info-title, .book-showcase__staff-picks, .form-library-card__library-name, .form-library-card__reader-name::placeholder, .form-library-card__card-number::placeholder, .form-library-card__reader-name, .form-library-card__card-number {
@@ -9,7 +9,7 @@ h1, h2, .welcome__greeting, .menu__title, .menu__price, .digital-library-cards__
   justify-content: space-between;
   align-items: center; }
 
-.navigation__link a, .carousel-pagination__item, .button {
+.lower-footer__developer-github-link, .navigation__link a, .carousel-pagination__item, .button {
   transition: 1s; }
 
 html {
@@ -807,7 +807,7 @@ template {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 19px; }
 
 .digital-library-cards__get-card {
   display: flex;
@@ -834,6 +834,63 @@ template {
   display: flex;
   justify-content: flex-end;
   gap: 20px; }
+
+.footer {
+  background-color: #0C0C0E; }
+
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 30px; }
+
+.upper-footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem;
+  color: #FFFFFF; }
+
+.upper-footer__right {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem;
+  color: #FFFFFF;
+  text-align: right; }
+
+.upper-footer__schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
+
+.upper-footer__social-container {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+  display: flex;
+  gap: 15px; }
+
+.lower-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+
+.lower-footer__developer-github-link {
+  text-decoration: none;
+  color: #FFFFFF; }
+  .lower-footer__developer-github-link:hover {
+    color: #BB945F; }
 
 .navigation {
   display: flex;
