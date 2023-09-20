@@ -1,7 +1,7 @@
 body, .text-explanation, .favorites__title-peacker-seasons, .menu__name, .our-contacts__information-container, .digital-library-cards__info, .seasons-peaker .seasons-peaker__season-lable, .book-showcase__book-name, .book-showcase__autor, .book-showcase__description, .button, .button_library-card, .button_sign-up, .button_log-in, .form-library-card__title {
   font-family: 'Inter', sans-serif; }
 
-h1, h2, .welcome__greeting, .menu__title, .menu__price, .digital-library-cards__info-title, .book-showcase__staff-picks, .form-library-card__library-name, .form-library-card__reader-name::placeholder, .form-library-card__card-number::placeholder {
+h1, h2, .welcome__greeting, .menu__title, .menu__price, .digital-library-cards__info-title, .book-showcase__staff-picks, .form-library-card__library-name, .form-library-card__reader-name::placeholder, .form-library-card__card-number::placeholder, .form-library-card__reader-name, .form-library-card__card-number {
   font-family: 'Forum', cursive; }
 
 .header__wrapper, .header__panel {
@@ -1080,6 +1080,15 @@ template {
   border: none; }
 
 .form-library-card__reader-name::placeholder, .form-library-card__card-number::placeholder {
+  color: #8E8E8E;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 5rem;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px; }
+
+.form-library-card__reader-name, .form-library-card__card-number {
   padding: 8px 20px;
   color: #8E8E8E;
   font-size: 3rem;
