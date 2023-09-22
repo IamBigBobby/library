@@ -892,7 +892,7 @@ template {
   .lower-footer__developer-github-link:hover {
     color: #BB945F; }
 
-.navigation {
+.navigation__list {
   display: flex;
   gap: 30px; }
 
