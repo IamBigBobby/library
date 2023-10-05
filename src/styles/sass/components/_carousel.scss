@@ -1,10 +1,19 @@
 .carousel{
   display: flex;
   gap: 25px;
+
+  @include media-tablet{
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .carousel__item{
   display: block;
+}
+
+.carousel__swiper{
+  display: none;
 }
 
 .carousel-pagination{
@@ -30,4 +39,19 @@
 
 .carousel-pagination__item_active{
   background-color: $orange;
+}
+
+@include media-tablet{
+  .carousel__swiper{
+    display: block;
+
+    span{
+      display: block;
+      
+    }
+  }
+
+  .carousel__item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-last-child(1)){
+    display: none;
+  }
 }

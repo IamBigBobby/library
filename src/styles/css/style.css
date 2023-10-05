@@ -912,9 +912,16 @@ template {
 .carousel {
   display: flex;
   gap: 25px; }
+  @media (max-width: 1024px) {
+    .carousel {
+      justify-content: center;
+      align-items: center; } }
 
 .carousel__item {
   display: block; }
+
+.carousel__swiper {
+  display: none; }
 
 .carousel-pagination {
   margin: 40px auto 20px;
@@ -935,6 +942,14 @@ template {
 .carousel-pagination__item_active {
   background-color: #BB945F; }
 
+@media (max-width: 1024px) {
+  .carousel__swiper {
+    display: block; }
+    .carousel__swiper span {
+      display: block; }
+
+  .carousel__item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-last-child(1)) {
+    display: none; } }
 .seasons-peaker {
   display: flex;
   align-items: center;
