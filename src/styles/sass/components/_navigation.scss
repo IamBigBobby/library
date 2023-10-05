@@ -1,6 +1,10 @@
 .navigation__list{
   display: flex;
   gap: 30px;
+
+  @include media-tablet{
+    display: none;
+  }
 }
 .navigation__link{
   list-style-type: none;
