@@ -1155,15 +1155,16 @@ template {
   letter-spacing: 0.6px;
   margin-bottom: 25px; }
 
-.burger-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  height: 20px; }
+@media (max-width: 1024px) {
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 20px; }
 
-.burger-menu__string {
-  width: 45px;
-  height: 2px;
-  background-color: #FFFFFF; }
+  .burger-menu__string {
+    width: 45px;
+    height: 2px;
+    background-color: #FFFFFF; } }
 
 /*# sourceMappingURL=style.css.map */
