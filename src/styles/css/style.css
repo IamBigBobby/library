@@ -816,14 +816,23 @@ template {
 .digital-library-cards__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 40px;
   margin-bottom: 19px; }
+  @media (max-width: 1024px) {
+    .digital-library-cards__container {
+      justify-content: center;
+      gap: 20px; } }
 
 .digital-library-cards__get-card {
   display: flex;
   flex-direction: column;
   text-align: right;
   gap: 35px; }
+  @media (max-width: 1024px) {
+    .digital-library-cards__get-card {
+      text-align: center;
+      gap: 20px; } }
 
 .digital-library-cards__info-title {
   font-size: 3rem;
@@ -845,6 +854,9 @@ template {
   justify-content: flex-end;
   gap: 20px; }
 
+@media (max-width: 1024px) {
+  .digital-library-cards__buttons-container {
+    justify-content: center; } }
 .footer {
   background-color: #0C0C0E; }
 
