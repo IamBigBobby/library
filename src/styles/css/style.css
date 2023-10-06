@@ -723,8 +723,12 @@ template {
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px; }
+  @media (max-width: 1024px) {
+    .menu {
+      gap: 42px; } }
 
 .menu__coffee-and-tea, .menu__desserts-and-cakes {
   width: 438px;
@@ -732,9 +736,9 @@ template {
   flex-direction: column;
   gap: 40px; }
 
-.menu__desserts-and-cakes > * {
-  text-align: right; }
-
+@media (max-width: 1024px) {
+  .menu__desserts-and-cakes {
+    margin-left: auto; } }
 .menu__title {
   font-size: 4rem;
   font-style: normal;
