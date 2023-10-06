@@ -21,6 +21,11 @@
   display: flex;
   justify-content: space-between;
   width: 68px;
+
+  @include media-tablet{
+    width: 120px;
+    margin-top: 25px;
+  }
 }
 
 .carousel-pagination__item{
@@ -34,6 +39,14 @@
   &:hover{
     background-color: $orange;
     transform: scale(1.2);
+  }
+}
+
+.carousel-pagination__item:nth-last-child(-n+2){
+  display: none;
+
+  @include media-tablet{
+    display: block;
   }
 }
 

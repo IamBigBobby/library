@@ -928,6 +928,10 @@ template {
   display: flex;
   justify-content: space-between;
   width: 68px; }
+  @media (max-width: 1024px) {
+    .carousel-pagination {
+      width: 120px;
+      margin-top: 25px; } }
 
 .carousel-pagination__item {
   border-radius: 50%;
@@ -938,6 +942,12 @@ template {
   .carousel-pagination__item:hover {
     background-color: #BB945F;
     transform: scale(1.2); }
+
+.carousel-pagination__item:nth-last-child(-n+2) {
+  display: none; }
+  @media (max-width: 1024px) {
+    .carousel-pagination__item:nth-last-child(-n+2) {
+      display: block; } }
 
 .carousel-pagination__item_active {
   background-color: #BB945F; }
