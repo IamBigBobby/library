@@ -1013,6 +1013,9 @@ template {
   column-gap: 260px;
   margin-top: 45px;
   margin-bottom: 20px; }
+  @media (max-width: 1024px) {
+    .book-showcase {
+      justify-content: center; } }
 
 .book-showcase__book-card {
   position: relative;
