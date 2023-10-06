@@ -1,0 +1,14 @@
+@include media-tablet{
+  .burger-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 20px;
+  }
+
+  .burger-menu__string{
+    width: 45px;
+    height: 2px;
+    background-color: $white;
+  }
+}

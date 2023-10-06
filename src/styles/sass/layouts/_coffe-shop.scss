@@ -5,8 +5,13 @@
 
 .menu{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  @include media-tablet{
+    gap: 42px;
+  }
 }
 
 .menu__coffee-and-tea, .menu__desserts-and-cakes{
@@ -16,8 +21,11 @@
   gap: 40px;
 }
 
-.menu__desserts-and-cakes > *{
-  text-align: right;
+
+@include media-tablet{
+  .menu__desserts-and-cakes{
+    margin-left: auto;
+  }
 }
 
 
