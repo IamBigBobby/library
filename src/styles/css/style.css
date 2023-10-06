@@ -788,6 +788,9 @@ template {
   text-transform: capitalize;
   margin-top: 40px;
   margin-bottom: 20px; }
+  @media (max-width: 1024px) {
+    .our-contacts__information-container {
+      gap: 100px; } }
 
 .our-contacts__contact-information {
   display: flex;
@@ -806,6 +809,9 @@ template {
   display: block;
   width: 696px;
   height: 414px; }
+  @media (max-width: 1024px) {
+    .our-contacts__location {
+      margin: auto; } }
 
 .digital-library-cards__container {
   display: flex;
