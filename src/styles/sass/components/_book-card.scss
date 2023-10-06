@@ -5,6 +5,10 @@
   column-gap: 260px;
   margin-top: 45px;
   margin-bottom: 20px;
+
+  @include media-tablet{
+    justify-content: center;
+  }
 }
 
 .book-showcase__book-card{

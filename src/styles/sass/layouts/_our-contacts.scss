@@ -10,6 +10,10 @@
 
   margin-top: 40px;
   margin-bottom: 20px;
+
+  @include media-tablet{
+    gap: 100px;
+  }
 }
 
 .our-contacts__contact-information{
@@ -32,4 +36,8 @@
   display: block;
   width: 696px;
   height: 414px;
+
+  @include media-tablet{
+    margin: auto;
+  }
 }

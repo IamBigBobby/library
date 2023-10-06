@@ -1,8 +1,15 @@
 .digital-library-cards__container{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 40px;
   margin-bottom: 19px;
+
+  @include media-tablet{
+    justify-content: center;
+
+    gap: 20px;
+  }
 }
 
 .digital-library-cards__get-card{
@@ -10,6 +17,12 @@
   flex-direction: column;
   text-align: right;
   gap: 35px;
+
+  @include media-tablet{
+    text-align: center;
+
+    gap: 20px
+  }
 }
 
 .digital-library-cards__info-title{
@@ -29,4 +42,10 @@
   display: flex;
   justify-content: flex-end;
   gap: 20px
+}
+
+@include media-tablet{
+  .digital-library-cards__buttons-container{
+    justify-content: center;
+  }
 }
