@@ -931,11 +931,11 @@ template {
   .navigation__link a:hover {
     color: #BB945F; }
 
-.carousel {
+.carousel__wrapper {
   display: flex;
   gap: 25px; }
   @media (max-width: 1024px) {
-    .carousel {
+    .carousel__wrapper {
       justify-content: center;
       align-items: center; } }
 
