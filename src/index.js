@@ -1,3 +1,3 @@
-import { slider } from "./js/Slider";
+import { slider } from "./js/Slider-desktop";
 
 
