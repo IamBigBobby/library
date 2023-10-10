@@ -1,9 +1,15 @@
-// .carousel{
-// }
+.about__wrapper-carousel{
+  overflow: hidden;
+}
 
-.carousel__wrapper{
+.carousel{
   display: flex;
   gap: 25px;
+
+  position: relative;
+  left: 0px;
+
+  transition: 2s;
 
   @include media-tablet{
     justify-content: center;
@@ -13,6 +19,24 @@
 
 .carousel__item{
   display: block;
+
+  transition: 3s;
+}
+
+.carousel__item_unvisible{
+  display: block;
+
+  opacity: 0;
+
+  transition: 3s;
+}
+
+.carousel__item_visible{
+  display: block;
+
+  opacity: 1;
+
+  transition: 3s;
 }
 
 .carousel__swiper{

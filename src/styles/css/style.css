@@ -931,16 +931,33 @@ template {
   .navigation__link a:hover {
     color: #BB945F; }
 
-.carousel__wrapper {
+.about__wrapper-carousel {
+  overflow: hidden; }
+
+.carousel {
   display: flex;
-  gap: 25px; }
+  gap: 25px;
+  position: relative;
+  left: 0px;
+  transition: 2s; }
   @media (max-width: 1024px) {
-    .carousel__wrapper {
+    .carousel {
       justify-content: center;
       align-items: center; } }
 
 .carousel__item {
-  display: block; }
+  display: block;
+  transition: 3s; }
+
+.carousel__item_unvisible {
+  display: block;
+  opacity: 0;
+  transition: 3s; }
+
+.carousel__item_visible {
+  display: block;
+  opacity: 1;
+  transition: 3s; }
 
 .carousel__swiper {
   display: none; }

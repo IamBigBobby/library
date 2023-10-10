@@ -94,19 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_utils_Slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/utils/Slider */ \"./src/js/utils/Slider.js\");\n\r\n\r\nObject(_js_utils_Slider__WEBPACK_IMPORTED_MODULE_0__[\"slider\"])()\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_Slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/Slider */ \"./src/js/Slider.js\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/js/utils/Slider.js":
-/*!********************************!*\
-  !*** ./src/js/utils/Slider.js ***!
-  \********************************/
+/***/ "./src/js/Slider.js":
+/*!**************************!*\
+  !*** ./src/js/Slider.js ***!
+  \**************************/
 /*! exports provided: slider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"slider\", function() { return slider; });\nfunction slider(){\r\n  console.log('Work!');\r\n}\n\n//# sourceURL=webpack:///./src/js/utils/Slider.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"slider\", function() { return slider; });\nlet slideRange = 0;\r\nlet imagesCarousel = document.querySelectorAll('.carousel__item');\r\nlet carousel = document.querySelector('.carousel');\r\n\r\nfunction slider(){\r\n  for (let i = 0; i <= 2; i++){\r\n    imagesCarousel[i].classList.add('carousel__item_visible');\r\n  }\r\n  for (let i = 3; i < imagesCarousel.length; i++){\r\n    imagesCarousel[i].classList.add('carousel__item_unvisible');\r\n  }\r\n\r\n  imagesCarousel.forEach((element) => {\r\n    element.addEventListener('click', (event) => {\r\n      moveSlider(event);\r\n    })\r\n  })\r\n}\r\n\r\nfunction moveSlider (event){\r\n  let visibleImg = document.querySelectorAll('.carousel__item_visible');\r\n  let index = Array.prototype.indexOf.call(visibleImg, event.target);\r\n  console.log(event.target, index, event.target.nextElementSibling);\r\n  if (index === 2){\r\n    if (event.target.nextElementSibling.classList.contains('carousel__item_unvisible')){\r\n      slideRange += 475;\r\n\r\n      carousel.style.left = -slideRange + 'px';\r\n\r\n      event.target.nextElementSibling.classList.remove('carousel__item_unvisible');\r\n      event.target.nextElementSibling.classList.add('carousel__item_visible');\r\n      \r\n      visibleImg[0].classList.remove('carousel__item_visible');\r\n      visibleImg[0].classList.add('carousel__item_unvisible');\r\n    }\r\n  }\r\n  else if (index === 0){\r\n    if (event.target.previousElementSibling.classList.contains('carousel__item_unvisible')){\r\n      slideRange -= 475;\r\n\r\n      carousel.style.left = -slideRange + 'px';\r\n\r\n      event.target.previousElementSibling.classList.remove('carousel__item_unvisible');\r\n      event.target.previousElementSibling.classList.add('carousel__item_visible');\r\n      \r\n      visibleImg[2].classList.remove('carousel__item_visible');\r\n      visibleImg[2].classList.add('carousel__item_unvisible');\r\n    }\r\n  }\r\n} \r\n\r\nslider();\n\n//# sourceURL=webpack:///./src/js/Slider.js?");
 
 /***/ })
 
