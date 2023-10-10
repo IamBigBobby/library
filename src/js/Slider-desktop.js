@@ -2,7 +2,7 @@ let slideRange = 0;
 let imagesCarousel = document.querySelectorAll('.carousel__item');
 let carousel = document.querySelector('.carousel');
 
-export function slider(){
+export function sliderDesktop(){
   for (let i = 0; i <= 2; i++){
     imagesCarousel[i].classList.add('carousel__item_visible');
   }
@@ -20,7 +20,6 @@ export function slider(){
 function moveSlider (event){
   let visibleImg = document.querySelectorAll('.carousel__item_visible');
   let index = Array.prototype.indexOf.call(visibleImg, event.target);
-  console.log(event.target, index, event.target.nextElementSibling);
   if (index === 2){
     if (event.target.nextElementSibling.classList.contains('carousel__item_unvisible')){
       slideRange += 475;
@@ -48,5 +47,3 @@ function moveSlider (event){
     }
   }
 } 
-
-slider();
