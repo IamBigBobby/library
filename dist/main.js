@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_Slider_desktop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/Slider-desktop */ \"./src/js/Slider-desktop.js\");\n\r\n\r\nif (window.innerWidth > 1024) {\r\n  Object(_js_Slider_desktop__WEBPACK_IMPORTED_MODULE_0__[\"sliderDesktop\"])();\r\n}\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_Slider_desktop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/Slider-desktop */ \"./src/js/Slider-desktop.js\");\n/* harmony import */ var _js_Slider_mobile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/Slider-mobile */ \"./src/js/Slider-mobile.js\");\n\r\n\r\n\r\nif (window.innerWidth > 1024) {\r\n  Object(_js_Slider_desktop__WEBPACK_IMPORTED_MODULE_0__[\"sliderDesktop\"])();\r\n} else {\r\n  Object(_js_Slider_mobile__WEBPACK_IMPORTED_MODULE_1__[\"sliderMobile\"])();\r\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sliderDesktop\", function() { return sliderDesktop; });\nlet slideRange = 0;\r\nlet imagesCarousel = document.querySelectorAll('.carousel__item');\r\nlet carousel = document.querySelector('.carousel');\r\n\r\nfunction sliderDesktop(){\r\n  for (let i = 0; i <= 2; i++){\r\n    imagesCarousel[i].classList.add('carousel__item_visible');\r\n  }\r\n  for (let i = 3; i < imagesCarousel.length; i++){\r\n    imagesCarousel[i].classList.add('carousel__item_unvisible');\r\n  }\r\n\r\n  imagesCarousel.forEach((element) => {\r\n    element.addEventListener('click', (event) => {\r\n      moveSlider(event);\r\n    })\r\n  })\r\n}\r\n\r\nfunction moveSlider (event){\r\n  let visibleImg = document.querySelectorAll('.carousel__item_visible');\r\n  let index = Array.prototype.indexOf.call(visibleImg, event.target);\r\n  if (index === 2){\r\n    if (event.target.nextElementSibling.classList.contains('carousel__item_unvisible')){\r\n      slideRange += 475;\r\n\r\n      carousel.style.left = -slideRange + 'px';\r\n\r\n      event.target.nextElementSibling.classList.remove('carousel__item_unvisible');\r\n      event.target.nextElementSibling.classList.add('carousel__item_visible');\r\n      \r\n      visibleImg[0].classList.remove('carousel__item_visible');\r\n      visibleImg[0].classList.add('carousel__item_unvisible');\r\n    }\r\n  }\r\n  else if (index === 0){\r\n    if (event.target.previousElementSibling.classList.contains('carousel__item_unvisible')){\r\n      slideRange -= 475;\r\n\r\n      carousel.style.left = -slideRange + 'px';\r\n\r\n      event.target.previousElementSibling.classList.remove('carousel__item_unvisible');\r\n      event.target.previousElementSibling.classList.add('carousel__item_visible');\r\n      \r\n      visibleImg[2].classList.remove('carousel__item_visible');\r\n      visibleImg[2].classList.add('carousel__item_unvisible');\r\n    }\r\n  }\r\n} \r\n\n\n//# sourceURL=webpack:///./src/js/Slider-desktop.js?");
+
+/***/ }),
+
+/***/ "./src/js/Slider-mobile.js":
+/*!*********************************!*\
+  !*** ./src/js/Slider-mobile.js ***!
+  \*********************************/
+/*! exports provided: sliderMobile */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sliderMobile\", function() { return sliderMobile; });\nlet slideRange = 950;\r\nlet carousel = document.querySelector('.carousel');\r\n\r\nfunction sliderMobile(){\r\n  let swipers = document.querySelectorAll('.carousel__swiper');\r\n  let leftSwipe = swipers[0];\r\n  let rightSwipe = swipers[1];\r\n\r\n  leftSwipe.addEventListener('load', () => {\r\n    let svg = leftSwipe.contentDocument;\r\n    svg.addEventListener('click', (event) => {\r\n      swipeLeft();\r\n    });\r\n  });\r\n\r\n  rightSwipe.addEventListener('load', () => {\r\n    let svg = rightSwipe.contentDocument;\r\n    svg.addEventListener('click', (event) => {\r\n      swipeRight()\r\n    })\r\n  })\r\n}\r\n\r\nfunction swipeLeft(){\r\n  if (slideRange >= 950){\r\n    return;\r\n  } else {\r\n    slideRange += 475;\r\n    carousel.style.left = slideRange + 'px';;\r\n  }\r\n}\r\n\r\nfunction swipeRight(){\r\n  if (slideRange <= -950){\r\n    return;\r\n  } else {\r\n    slideRange -= 475;\r\n    carousel.style.left = slideRange + 'px';;\r\n  }\r\n}\n\n//# sourceURL=webpack:///./src/js/Slider-mobile.js?");
 
 /***/ })
 

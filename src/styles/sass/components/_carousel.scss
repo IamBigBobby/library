@@ -1,5 +1,13 @@
 .about__wrapper-carousel{
   overflow: hidden;
+
+  @include media-tablet{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+  }
 }
 
 .carousel{
@@ -14,6 +22,17 @@
   @include media-tablet{
     justify-content: center;
     align-items: center;
+
+    left: 970px;
+  }
+}
+
+.about__container-carousel{
+  @include media-tablet{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
   }
 }
 
@@ -37,10 +56,6 @@
   opacity: 1;
 
   transition: 3s;
-}
-
-.carousel__swiper{
-  display: none;
 }
 
 .carousel-pagination{
@@ -81,17 +96,15 @@
   background-color: $orange;
 }
 
+.carousel__swiper{
+  display: none;
+}
+
 @include media-tablet{
   .carousel__swiper{
     display: block;
-
     span{
       display: block;
-      
     }
-  }
-
-  .carousel__item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-last-child(1)){
-    display: none;
   }
 }

@@ -709,6 +709,9 @@ template {
   margin-top: 40px;
   margin-bottom: 20px; }
 
+.about {
+  position: relative; }
+
 .favorites__title-peacker-seasons {
   font-size: 2rem;
   font-style: normal;
@@ -933,6 +936,13 @@ template {
 
 .about__wrapper-carousel {
   overflow: hidden; }
+  @media (max-width: 1024px) {
+    .about__wrapper-carousel {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin: 0 auto;
+      width: 500px; } }
 
 .carousel {
   display: flex;
@@ -943,7 +953,15 @@ template {
   @media (max-width: 1024px) {
     .carousel {
       justify-content: center;
-      align-items: center; } }
+      align-items: center;
+      left: 970px; } }
+
+@media (max-width: 1024px) {
+  .about__container-carousel {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px; } }
 
 .carousel__item {
   display: block;
@@ -958,9 +976,6 @@ template {
   display: block;
   opacity: 1;
   transition: 3s; }
-
-.carousel__swiper {
-  display: none; }
 
 .carousel-pagination {
   margin: 40px auto 20px;
@@ -991,14 +1006,14 @@ template {
 .carousel-pagination__item_active {
   background-color: #BB945F; }
 
+.carousel__swiper {
+  display: none; }
+
 @media (max-width: 1024px) {
   .carousel__swiper {
     display: block; }
     .carousel__swiper span {
-      display: block; }
-
-  .carousel__item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-last-child(1)) {
-    display: none; } }
+      display: block; } }
 .seasons-peaker {
   display: flex;
   align-items: center;
