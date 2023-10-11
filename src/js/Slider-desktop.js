@@ -21,7 +21,10 @@ function moveSlider (event){
   let visibleImg = document.querySelectorAll('.carousel__item_visible');
   let index = Array.prototype.indexOf.call(visibleImg, event.target);
   if (index === 2){
-    if (event.target.nextElementSibling.classList.contains('carousel__item_unvisible')){
+    if (event.target.nextElementSibling === null){
+      return
+    }
+    else if (event.target.nextElementSibling.classList.contains('carousel__item_unvisible')){
       slideRange += 475;
 
       carousel.style.left = -slideRange + 'px';
@@ -34,7 +37,10 @@ function moveSlider (event){
     }
   }
   else if (index === 0){
-    if (event.target.previousElementSibling.classList.contains('carousel__item_unvisible')){
+    if (event.target.previousElementSibling === null){
+      return;
+    }
+    else if (event.target.previousElementSibling.classList.contains('carousel__item_unvisible')){
       slideRange -= 475;
 
       carousel.style.left = -slideRange + 'px';
