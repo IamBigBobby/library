@@ -1,3 +1,6 @@
+import { paginationSLideLeft } from "./Pagination";
+import { paginationSLideRight } from "./Pagination";
+
 let slideRange = 950;
 let carousel = document.querySelector('.carousel');
 
@@ -26,7 +29,8 @@ function swipeLeft(){
     return;
   } else {
     slideRange += 475;
-    carousel.style.left = slideRange + 'px';;
+    carousel.style.left = slideRange + 'px';
+    paginationSLideLeft();
   }
 }
 
@@ -35,6 +39,7 @@ function swipeRight(){
     return;
   } else {
     slideRange -= 475;
-    carousel.style.left = slideRange + 'px';;
+    carousel.style.left = slideRange + 'px';
+    paginationSLideRight();
   }
 }
