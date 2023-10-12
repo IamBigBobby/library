@@ -78,10 +78,7 @@
   cursor: pointer;
   @extend %transition;
 
-  &:hover{
-    background-color: $orange;
-    transform: scale(1.2);
-  }
+  transition: 1s;
 }
 
 .carousel-pagination__item:nth-last-child(-n+2){
@@ -94,6 +91,9 @@
 
 .carousel-pagination__item_active{
   background-color: $orange;
+  transform: scale(1.5);
+
+  transition: 1s;
 }
 
 .carousel__swiper{

@@ -992,10 +992,8 @@ template {
   width: 16px;
   height: 16px;
   background-color: #0C0C0E;
-  cursor: pointer; }
-  .carousel-pagination__item:hover {
-    background-color: #BB945F;
-    transform: scale(1.2); }
+  cursor: pointer;
+  transition: 1s; }
 
 .carousel-pagination__item:nth-last-child(-n+2) {
   display: none; }
@@ -1004,7 +1002,9 @@ template {
       display: block; } }
 
 .carousel-pagination__item_active {
-  background-color: #BB945F; }
+  background-color: #BB945F;
+  transform: scale(1.5);
+  transition: 1s; }
 
 .carousel__swiper {
   display: none; }

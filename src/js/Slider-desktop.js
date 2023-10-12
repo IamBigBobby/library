@@ -1,3 +1,6 @@
+import { paginationSLideLeft } from "./Pagination";
+import { paginationSLideRight } from "./Pagination";
+
 let slideRange = 0;
 let imagesCarousel = document.querySelectorAll('.carousel__item');
 let carousel = document.querySelector('.carousel');
@@ -34,6 +37,8 @@ function moveSlider (event){
       
       visibleImg[0].classList.remove('carousel__item_visible');
       visibleImg[0].classList.add('carousel__item_unvisible');
+
+      paginationSLideRight();
     }
   }
   else if (index === 0){
@@ -50,6 +55,8 @@ function moveSlider (event){
       
       visibleImg[2].classList.remove('carousel__item_visible');
       visibleImg[2].classList.add('carousel__item_unvisible');
+
+      paginationSLideLeft();
     }
   }
 } 
