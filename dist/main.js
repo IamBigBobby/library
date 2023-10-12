@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_Slider_desktop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/Slider-desktop */ \"./src/js/Slider-desktop.js\");\n/* harmony import */ var _js_Slider_mobile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/Slider-mobile */ \"./src/js/Slider-mobile.js\");\n/* harmony import */ var _js_Pagination__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/Pagination */ \"./src/js/Pagination.js\");\n\r\n\r\n\r\n\r\nif (window.innerWidth > 1024) {\r\n  Object(_js_Slider_desktop__WEBPACK_IMPORTED_MODULE_0__[\"sliderDesktop\"])();\r\n} else {\r\n  Object(_js_Slider_mobile__WEBPACK_IMPORTED_MODULE_1__[\"sliderMobile\"])();\r\n}\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_Slider_desktop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/Slider-desktop */ \"./src/js/Slider-desktop.js\");\n/* harmony import */ var _js_Slider_mobile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/Slider-mobile */ \"./src/js/Slider-mobile.js\");\n\r\n\r\n\r\nif (window.innerWidth > 1024) {\r\n  Object(_js_Slider_desktop__WEBPACK_IMPORTED_MODULE_0__[\"sliderDesktop\"])();\r\n} else {\r\n  Object(_js_Slider_mobile__WEBPACK_IMPORTED_MODULE_1__[\"sliderMobile\"])();\r\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
