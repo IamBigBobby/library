@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toggleBurger\", function() { return toggleBurger; });\nfunction toggleBurger(){\r\n  let burger = document.querySelector('.burger-menu');\r\n  let navigation = document.querySelector('.navigation__list');\r\n  burger.addEventListener('click', (event) => {\r\n    console.log(event.target);\r\n    burger.classList.toggle('burger-menu_rotate');\r\n    navigation.classList.toggle('navigation__list_visible-tablet');\r\n\r\n    if (document.body.style.overflow === \"hidden\"){\r\n      document.body.style.overflow = \"\";\r\n    } else {\r\n      document.body.style.overflow = \"hidden\";\r\n    }\r\n  })\r\n}\r\ntoggleBurger();\n\n//# sourceURL=webpack:///./src/js/Burger.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toggleBurger\", function() { return toggleBurger; });\nfunction toggleBurger(){\r\n  let burger = document.querySelector('.burger-menu');\r\n  let navigation = document.querySelector('.navigation__list');\r\n  burger.addEventListener('click', (event) => {\r\n    burger.classList.toggle('burger-menu_rotate');\r\n    navigation.classList.toggle('navigation__list_visible-tablet');\r\n\r\n    if (document.body.style.overflow === \"hidden\"){\r\n      document.body.style.overflow = \"\";\r\n    } else {\r\n      document.body.style.overflow = \"hidden\";\r\n    }\r\n  })\r\n}\r\ntoggleBurger();\n\n//# sourceURL=webpack:///./src/js/Burger.js?");
 
 /***/ }),
 
