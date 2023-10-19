@@ -675,7 +675,9 @@ template {
   background-color: #0C0C0E; }
 
 .header__wrapper {
-  padding: 20px 20px; }
+  padding: 20px 20px;
+  overflow: hidden;
+  position: relative; }
 
 .header__panel {
   gap: 40px; }
@@ -922,7 +924,20 @@ template {
   gap: 30px; }
   @media (max-width: 1024px) {
     .navigation__list {
-      display: none; } }
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      right: -332px;
+      z-index: 1;
+      background-color: #0C0C0E;
+      width: 332px;
+      height: 520px;
+      text-align: center;
+      transition: 1s; } }
+
+.navigation__list_visible-tablet {
+  right: 0px;
+  transition: 1s; }
 
 .navigation__link {
   list-style-type: none;
@@ -1242,7 +1257,11 @@ template {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    height: 20px; }
+    height: 20px;
+    transition: 1s; }
+
+  .burger-menu_rotate {
+    transform: rotate(90deg); }
 
   .burger-menu__string {
     width: 45px;

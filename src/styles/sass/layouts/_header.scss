@@ -5,6 +5,8 @@
 .header__wrapper{
   @extend %flex-space-between;  
   padding: 20px 20px;
+  overflow: hidden;
+  position: relative;
 }
 
 .header__panel{

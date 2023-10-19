@@ -4,6 +4,12 @@
     flex-direction: column;
     gap: 8px;
     height: 20px;
+
+    transition: 1s;
+  }
+
+  .burger-menu_rotate{
+    transform: rotate(90deg);
   }
 
   .burger-menu__string{
