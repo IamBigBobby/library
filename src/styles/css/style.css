@@ -13,7 +13,8 @@ h1, h2, .welcome__greeting, .menu__title, .menu__price, .digital-library-cards__
   transition: 1s; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
 body {
   font-size: 2rem;
