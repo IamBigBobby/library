@@ -1088,7 +1088,7 @@ template {
 .favorites__season[type="radio"]:checked + .seasons-peaker__season-lable::after {
   opacity: 1; }
 
-.book-showcase {
+.book-showcase__season {
   display: flex;
   flex-wrap: wrap;
   row-gap: 40px;
@@ -1096,7 +1096,7 @@ template {
   margin-top: 45px;
   margin-bottom: 20px; }
   @media (max-width: 1024px) {
-    .book-showcase {
+    .book-showcase__season {
       justify-content: center; } }
 
 .book-showcase__book-card {
