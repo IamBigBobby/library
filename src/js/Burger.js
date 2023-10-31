@@ -19,7 +19,5 @@ export function toggleBurger(){
     document.body.style.overflow = "";
     });
   });
-
-  
 }
 toggleBurger();
